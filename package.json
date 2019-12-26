@@ -1,7 +1,7 @@
 {
-  "name": "reason-fontkit",
-  "version": "2.8.3",
-  "description": "Fontkit-like API for OCaml/Reason",
+  "name": "reason-harfbuzz",
+  "version": "1.91.5000",
+  "description": "Harfbuzz API for ReasonML",
   "license": "MIT",
   "esy": {
     "build": [
@@ -9,7 +9,7 @@
         "dune",
         "build",
         "-p",
-        "fontkit"
+        "harfbuzz"
       ]
     ],
     "install": [
@@ -18,9 +18,6 @@
   },
   "dependencies": {
     "@opam/dune": ">=1.6.0",
-    "@opam/lwt": "*",
-    "reason-gl-matrix": "^0.9.9305",
-    "esy-freetype2": "^2.9.1001",
     "esy-harfbuzz": "^1.9.1005"
   },
   "resolutions": {
