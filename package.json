@@ -3,18 +3,20 @@
   "version": "1.91.5000",
   "description": "Harfbuzz API for ReasonML",
   "license": "MIT",
+  "scripts": {
+    "format": "esy dune build @fmt --auto-promote"
+  },
   "esy": {
     "build": [
       [
         "dune",
         "build",
-        "--root",
-        "."
+        "-p",
+        "harfbuzz"
       ]
     ],
     "install": [
-      "esy-installer harfbuzz.install",
-      "esy-installer harfbuzz-example.install"
+      "esy-installer harfbuzz.install"
     ]
   },
   "dependencies": {

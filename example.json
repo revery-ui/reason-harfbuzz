@@ -1,0 +1,20 @@
+{
+  "source": "./package.json",
+  "scripts": {
+    "run": "esy '@example' x test_harfbuzz"
+  },
+  "override": {
+    "build": [
+      [
+        "dune",
+        "build",
+        "--root",
+        "."
+      ]
+    ],
+    "install": [
+      "esy-installer harfbuzz.install",
+      "esy-installer harfbuzz-example.install"
+    ]
+  }
+}
