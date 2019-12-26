@@ -1,12 +1,11 @@
 (library
-    (name fontkit)
-    (public_name fontkit)
-    (js_of_ocaml (javascript_files fontkit.js fontkit-lib.compiled.js))
-    (cxx_names fontkit)
+    (name harfbuzz)
+    (public_name harfbuzz)
+    (js_of_ocaml (javascript_files harfbuzz.js))
+    (cxx_names harfbuzz)
     (library_flags (:include flags.sexp))
     (c_flags (:include c_flags.sexp))
-    (cxx_flags (:include cxx_flags.sexp))
-    (libraries lwt))
+    (cxx_flags (:include cxx_flags.sexp)))
 
 (rule
     (targets c_flags.sexp cxx_flags.sexp flags.sexp)

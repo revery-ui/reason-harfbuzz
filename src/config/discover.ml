@@ -18,7 +18,7 @@ let get_os =
         | "Linux" -> Linux
         | _ -> Unknown
 
-let c_flags = ["-fPIC"; "-I";  (Sys.getenv "FREETYPE2_INCLUDE_PATH"); "-I"; (Sys.getenv "HARFBUZZ_INCLUDE_PATH")]
+let c_flags = ["-fPIC"; "-I"; (Sys.getenv "HARFBUZZ_INCLUDE_PATH")]
 
 let ccopt s = ["-ccopt"; s]
 let cclib s = ["-cclib"; s]
@@ -36,18 +36,16 @@ let extraFlags =
     match get_os with
     | Windows -> []
     | Mac -> posixFlags
-    | Linux -> ccopt("-L/usr/lib")
+    | _ -> ccopt("-L/usr/lib")
     @ posixFlags
 
 let lib_path_flags =
     match get_os with
     | _ -> []
-    @ ccopt ("-L" ^ (Sys.getenv "FREETYPE2_LIB_PATH"))
     @ ccopt ("-L" ^ (Sys.getenv "HARFBUZZ_LIB_PATH"))
 
 let flags = []
     @ ccopt "-L."
-    @ cclib ("-lfreetype")
     @ cclib ("-lharfbuzz")
     @ extraFlags
     @ lib_path_flags

@@ -8,24 +8,20 @@
       [
         "dune",
         "build",
-        "-p",
-        "harfbuzz"
+        "--root",
+        "."
       ]
     ],
     "install": [
-      "esy-installer"
+      "esy-installer harfbuzz.install",
+      "esy-installer harfbuzz-example.install"
     ]
   },
   "dependencies": {
     "@opam/dune": ">=1.6.0",
     "esy-harfbuzz": "^1.9.1005"
   },
-  "resolutions": {
-    "@opam/cmdliner": "1.0.4",
-    "@opam/camomile": "1.0.1"
-  },
   "devDependencies": {
-    "esy-cmake": "^0.3.4",
     "@esy-ocaml/reason": "^3.3.7",
     "ocaml": ">=4.4.0"
   }

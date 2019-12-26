@@ -1,17 +1,13 @@
 (executable
-    (name test_fontkit)
-    (package fontkit-example)
-    (preprocess (pps lwt_ppx))
-    (public_name test_fontkit)
+    (name test_harfbuzz)
+    (package harfbuzz-example)
+    (public_name test_harfbuzz)
     (libraries
         bigarray
-        lwt
-        lwt.unix
-        reglfw
-        fontkit
+        harfbuzz
             ))
 
 (install
-    (package fontkit-example)
+    (package harfbuzz-example)
     (section bin)
-    (files Roboto-Regular.ttf image4.jpg))
+    (files Roboto-Regular.ttf))
