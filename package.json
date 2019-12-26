@@ -1,6 +1,6 @@
 {
   "name": "reason-harfbuzz",
-  "version": "1.91.5001",
+  "version": "1.91.5002",
   "description": "Harfbuzz API for ReasonML",
   "license": "MIT",
   "scripts": {
