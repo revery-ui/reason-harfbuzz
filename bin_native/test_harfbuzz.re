@@ -15,7 +15,7 @@ let getExecutingDirectory = () =>
 print_endline("Hello, world!");
 
 let run = () => {
-  let fontPath = getExecutingDirectory() ++ "Roboto-Regular.ttf";
+  let fontPath = getExecutingDirectory() ++ "FiraCode-Regular.ttf";
   let result = Harfbuzz.hb_new_face(fontPath);
 
   switch (result) {
@@ -31,6 +31,7 @@ let run = () => {
 
     renderString("abc");
     renderString("!=ajga");
+    renderString("a==>b");
   };
 };
 

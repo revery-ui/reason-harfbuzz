@@ -10,4 +10,4 @@
 (install
     (package harfbuzz-example)
     (section bin)
-    (files Roboto-Regular.ttf))
+    (files Roboto-Regular.ttf FiraCode-Regular.ttf))
