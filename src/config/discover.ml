@@ -23,21 +23,7 @@ let c_flags = ["-fPIC"; "-I"; (Sys.getenv "HARFBUZZ_INCLUDE_PATH")]
 let ccopt s = ["-ccopt"; s]
 let cclib s = ["-cclib"; s]
 
-let posixFlags = []
-    @ ccopt ("-L/usr/local/lib")
-    @ cclib ("-lbz2")
-    @ cclib ("-lpng")
-    @ cclib ("-lz")
-    @ match Sys.file_exists "/opt/local/lib" with
-      | true -> ccopt ("-L/opt/local/lib")
-      | false -> []
-
-let extraFlags =
-    match get_os with
-    | Windows -> []
-    | Mac -> posixFlags
-    | _ -> ccopt("-L/usr/lib")
-    @ posixFlags
+let extraFlags = []
 
 let lib_path_flags =
     match get_os with
@@ -45,7 +31,6 @@ let lib_path_flags =
     @ ccopt ("-L" ^ (Sys.getenv "HARFBUZZ_LIB_PATH"))
 
 let flags = []
-    @ ccopt "-L."
     @ cclib ("-lharfbuzz")
     @ extraFlags
     @ lib_path_flags
