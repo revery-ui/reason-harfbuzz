@@ -23,7 +23,10 @@ let c_flags = ["-fPIC"; "-I"; (Sys.getenv "HARFBUZZ_INCLUDE_PATH")]
 let ccopt s = ["-ccopt"; s]
 let cclib s = ["-cclib"; s]
 
-let extraFlags = []
+let extraFlags =
+    match get_os with
+    | Linux -> ccopt("-L/usr/lib")
+    | _ -> []
 
 let lib_path_flags =
     match get_os with
