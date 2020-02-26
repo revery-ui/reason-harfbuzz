@@ -1,2 +1,2 @@
-(lang dune 2.3)
+(lang dune 2.0)
 (name harfbuzz)

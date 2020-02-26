@@ -22,7 +22,6 @@
     "@opam/dune-configurator": ">=2.0.1",
     "esy-harfbuzz": "^1.9.1005",
     "ocaml": ">=4.4.0"
-  },
-  "devDependencies": {}
+  }
 }
 
