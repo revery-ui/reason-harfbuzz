@@ -63,6 +63,16 @@ hb_font_t *get_font_ot(const char *filename, int size) {
 
   return font;
 }
+CAMLprim value rehb_destroy_face(value vFont) {
+  CAMLparam1(vFont);
+
+  hb_font_t *pFont = (hb_font_t*)vFont;
+  if (pFont) {
+    hb_font_destroy(pFont);
+  }
+  
+  CAMLreturn(Val_unit);
+}
 
 CAMLprim value rehb_new_face(value vString) {
   CAMLparam1(vString);
