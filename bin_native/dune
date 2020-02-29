@@ -1,10 +1,13 @@
 (executable
- (name test_harfbuzz)
- (package harfbuzz-example)
- (public_name test_harfbuzz)
- (libraries bigarray harfbuzz))
+    (name test_harfbuzz)
+    (package harfbuzz-example)
+    (public_name test_harfbuzz)
+    (libraries
+        bigarray
+        harfbuzz
+            ))
 
 (install
- (package harfbuzz-example)
- (section bin)
- (files Roboto-Regular.ttf FiraCode-Regular.ttf))
+    (package harfbuzz-example)
+    (section bin)
+    (files Roboto-Regular.ttf FiraCode-Regular.ttf))
