@@ -14,14 +14,17 @@
         "-p",
         "harfbuzz"
       ]
+    ],
+    "install": [
+      "esy-installer harfbuzz.install"
     ]
   },
   "dependencies": {
+    "@opam/dune": ">=1.6.0",
     "@esy-ocaml/reason": "^3.3.7",
-    "@opam/dune": ">=2.0.1",
-    "@opam/dune-configurator": ">=2.0.1",
-    "esy-harfbuzz": "^1.9.1005",
-    "ocaml": ">=4.4.0"
+    "ocaml": ">=4.4.0",
+    "esy-harfbuzz": "^1.9.1005"
+  },
+  "devDependencies": {
   }
 }
-
