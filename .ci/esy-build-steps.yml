@@ -4,7 +4,10 @@ steps:
   - task: NodeTool@0
     inputs:
       versionSpec: '8.9'
-  - script: npm install -g esy@0.5.8
+  - script: npm install -g esy@0.6.2
   - script: esy install
   - script: esy build
+  - script: esy '@example' install
+  - script: esy '@example' build
+  - script: esy '@example' run
 # Might want to add running tests here - that step will be dependent on your project!

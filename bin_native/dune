@@ -2,7 +2,7 @@
  (name test_harfbuzz)
  (package harfbuzz-example)
  (public_name test_harfbuzz)
- (libraries bigarray harfbuzz))
+ (libraries bigarray harfbuzz reason-native-crash-utils.asan))
 
 (install
  (package harfbuzz-example)
