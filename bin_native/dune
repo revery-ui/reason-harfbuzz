@@ -5,6 +5,7 @@
     (libraries
         bigarray
         harfbuzz
+	reason-native-crash-utils.asan
             ))
 
 (install
