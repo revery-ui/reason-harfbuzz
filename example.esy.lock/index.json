@@ -1,5 +1,5 @@
 {
-  "checksum": "06871d98b87ae28029d4ee42dd3470e4",
+  "checksum": "c2a7eed85ee448f7de7e6516e48b0b51",
   "root": "reason-harfbuzz@link-dev:./package.json",
   "node": {
     "reason-native-crash-utils@github:onivim/reason-native-crash-utils#ae1fd34@d41d8cd9": {
@@ -32,7 +32,6 @@
       "dependencies": [
         "reason-native-crash-utils@github:onivim/reason-native-crash-utils#ae1fd34@d41d8cd9",
         "ocaml@4.9.0@d41d8cd9", "esy-harfbuzz@1.9.1005@d41d8cd9",
-        "@opam/dune-configurator@opam:2.3.1@f275cf9a",
         "@opam/dune@opam:2.3.1@b10b59bf", "@esy-ocaml/reason@3.5.2@d41d8cd9"
       ],
       "devDependencies": []
