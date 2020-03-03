@@ -1,14 +1,10 @@
 (executable
-    (name test_harfbuzz)
-    (package harfbuzz-example)
-    (public_name test_harfbuzz)
-    (libraries
-        bigarray
-        harfbuzz
-	reason-native-crash-utils.asan
-            ))
+ (name test_harfbuzz)
+ (package harfbuzz-example)
+ (public_name test_harfbuzz)
+ (libraries bigarray harfbuzz reason-native-crash-utils.asan))
 
 (install
-    (package harfbuzz-example)
-    (section bin)
-    (files Roboto-Regular.ttf FiraCode-Regular.ttf))
+ (package harfbuzz-example)
+ (section bin)
+ (files Roboto-Regular.ttf FiraCode-Regular.ttf))
