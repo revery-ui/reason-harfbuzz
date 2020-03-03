@@ -4,7 +4,10 @@
     "run": "esy '@example' x test_harfbuzz"
   },
   "override": {
-    "build": [["dune", "build", "--root", "."]],
+    "build": ["dune build -p harfbuzz,harfbuzz-example -j4"],
+    "dependencies": {
+      "reason-native-crash-utils": "github:onivim/reason-native-crash-utils#ae1fd34"
+    },
     "install": [
       "esy-installer harfbuzz.install",
       "esy-installer harfbuzz-example.install"

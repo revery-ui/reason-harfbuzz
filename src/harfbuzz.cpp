@@ -16,8 +16,6 @@
 
 extern "C" {
 
-static char *dummyData = (char *)calloc(144, sizeof(char));
-
 // hb_font_t*
 
 CAMLprim value Val_success(value v) {
@@ -54,14 +52,28 @@ hb_font_t *get_font_ot(const char *filename, int size) {
   fclose(file);
 
   hb_blob_t *blob =
-      hb_blob_create(data, length, HB_MEMORY_MODE_WRITABLE, (void *)data, NULL);
+      hb_blob_create(data, length, HB_MEMORY_MODE_WRITABLE, (void *)data, free);
   hb_face_t *face = hb_face_create(blob, 0);
-  hb_font_t *font = hb_font_create(face);
+
+  hb_blob_destroy(blob); // face will keep a reference to blob
+
+  hb_font_t *font = hb_font_create(face); 
+  hb_face_destroy(face); // font will keep a reference to face
 
   hb_ot_font_set_funcs(font);
   hb_font_set_scale(font, size, size);
 
   return font;
+}
+CAMLprim value rehb_destroy_face(value vFont) {
+  CAMLparam1(vFont);
+
+  hb_font_t *pFont = (hb_font_t*)vFont;
+  if (pFont) {
+    hb_font_destroy(pFont);
+  }
+  
+  CAMLreturn(Val_unit);
 }
 
 CAMLprim value rehb_new_face(value vString) {
