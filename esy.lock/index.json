@@ -1,5 +1,5 @@
 {
-  "checksum": "b8b832e5484778e310d18c4278a9e417",
+  "checksum": "d68af208c93af1061d5b8d9f135d8648",
   "root": "reason-harfbuzz@link-dev:./package.json",
   "node": {
     "reason-harfbuzz@link-dev:./package.json": {
@@ -14,7 +14,7 @@
       "overrides": [],
       "dependencies": [
         "ocaml@4.9.0@d41d8cd9",
-        "esy-harfbuzz@github:esy-packages/esy-harfbuzz#42aa760@d41d8cd9",
+        "esy-harfbuzz@github:esy-packages/esy-harfbuzz#55510b8@d41d8cd9",
         "@opam/dune-configurator@opam:2.3.1@f275cf9a",
         "@opam/dune@opam:2.3.1@b10b59bf", "@esy-ocaml/reason@3.6.0@d41d8cd9"
       ],
@@ -34,13 +34,13 @@
       "dependencies": [],
       "devDependencies": []
     },
-    "esy-harfbuzz@github:esy-packages/esy-harfbuzz#42aa760@d41d8cd9": {
-      "id": "esy-harfbuzz@github:esy-packages/esy-harfbuzz#42aa760@d41d8cd9",
+    "esy-harfbuzz@github:esy-packages/esy-harfbuzz#55510b8@d41d8cd9": {
+      "id": "esy-harfbuzz@github:esy-packages/esy-harfbuzz#55510b8@d41d8cd9",
       "name": "esy-harfbuzz",
-      "version": "github:esy-packages/esy-harfbuzz#42aa760",
+      "version": "github:esy-packages/esy-harfbuzz#55510b8",
       "source": {
         "type": "install",
-        "source": [ "github:esy-packages/esy-harfbuzz#42aa760" ]
+        "source": [ "github:esy-packages/esy-harfbuzz#55510b8" ]
       },
       "overrides": [],
       "dependencies": [ "esy-cmake@0.3.5@d41d8cd9" ],
