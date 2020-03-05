@@ -20,7 +20,7 @@
     "@esy-ocaml/reason": "^3.3.7",
     "@opam/dune": ">=2.0.1",
     "@opam/dune-configurator": ">=2.0.1",
-    "esy-harfbuzz": "github:esy-packages/esy-harfbuzz#f79d39e",
+    "esy-harfbuzz": "github:esy-packages/esy-harfbuzz#42aa760",
     "ocaml": ">=4.4.0"
   }
 }
