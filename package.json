@@ -20,11 +20,8 @@
     "@esy-ocaml/reason": "^3.3.7",
     "@opam/dune": ">=2.0.1",
     "@opam/dune-configurator": ">=2.0.1",
-    "esy-harfbuzz": "^1.9.1006",
+    "esy-harfbuzz": "^1.9.1008",
     "ocaml": ">=4.4.0"
-  },
-  "resolutions": {
-    "esy-harfbuzz": "esy-packages/esy-harfbuzz#ed4668f"
   }
 }
 
