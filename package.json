@@ -1,6 +1,6 @@
 {
   "name": "reason-harfbuzz",
-  "version": "1.91.5008",
+  "version": "1.91.8000",
   "description": "Harfbuzz API for ReasonML",
   "license": "MIT",
   "scripts": {
@@ -20,7 +20,7 @@
     "@esy-ocaml/reason": "^3.3.7",
     "@opam/dune": ">=2.0.1",
     "@opam/dune-configurator": ">=2.0.1",
-    "esy-harfbuzz": "^1.9.1006",
+    "esy-harfbuzz": "^1.9.1008",
     "ocaml": ">=4.4.0"
   }
 }

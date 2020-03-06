@@ -1,5 +1,5 @@
 {
-  "checksum": "d17f0a57884299e6b92dd1b94c648255",
+  "checksum": "a5ede2ed07e3e9bd1f1d348d693c113f",
   "root": "reason-harfbuzz@link-dev:./package.json",
   "node": {
     "reason-native-crash-utils@github:onivim/reason-native-crash-utils#ae1fd34@d41d8cd9": {
@@ -31,7 +31,7 @@
       "overrides": [ "example.json" ],
       "dependencies": [
         "reason-native-crash-utils@github:onivim/reason-native-crash-utils#ae1fd34@d41d8cd9",
-        "ocaml@4.9.0@d41d8cd9", "esy-harfbuzz@1.9.1006@d41d8cd9",
+        "ocaml@4.9.0@d41d8cd9", "esy-harfbuzz@1.9.1008@d41d8cd9",
         "@opam/dune-configurator@opam:2.3.1@f275cf9a",
         "@opam/dune@opam:2.3.1@b10b59bf", "@esy-ocaml/reason@3.6.0@d41d8cd9"
       ],
@@ -51,14 +51,14 @@
       "dependencies": [],
       "devDependencies": []
     },
-    "esy-harfbuzz@1.9.1006@d41d8cd9": {
-      "id": "esy-harfbuzz@1.9.1006@d41d8cd9",
+    "esy-harfbuzz@1.9.1008@d41d8cd9": {
+      "id": "esy-harfbuzz@1.9.1008@d41d8cd9",
       "name": "esy-harfbuzz",
-      "version": "1.9.1006",
+      "version": "1.9.1008",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://registry.npmjs.org/esy-harfbuzz/-/esy-harfbuzz-1.9.1006.tgz#sha1:d706f1562513ea0f7c2e454f8dd5d9cd54f94d87"
+          "archive:https://registry.npmjs.org/esy-harfbuzz/-/esy-harfbuzz-1.9.1008.tgz#sha1:b83d1e80752d6f334f6c3e37b5b857d7d13adb67"
         ]
       },
       "overrides": [],
