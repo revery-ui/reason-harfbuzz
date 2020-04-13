@@ -1,6 +1,6 @@
 // Provides: rehb_new_face
 function rehb_new_face(
-  _fontName /*: string */,
+  _fontName /*: string */
 ) {
   return undefined;
 }
